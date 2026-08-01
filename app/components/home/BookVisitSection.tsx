@@ -52,7 +52,7 @@ export function BookVisitSection() {
         </div>
 
         <form className="self-start rounded-xl border border-hairline bg-sand p-5 shadow-soft-panel transition hover:border-clay/50 sm:p-6 lg:sticky lg:top-28">
-          <div className="inline-flex items-center gap-2 rounded-lg border border-clay/50 bg-clay/20 px-3 py-2 text-sm font-semibold text-bronze">
+          <div className="inline-flex items-center gap-2 rounded-lg border border-hairline bg-sand-deep px-3 py-2 text-sm font-semibold text-bronze">
             <CalendarDays className="h-4 w-4" />
             Site visit request
           </div>

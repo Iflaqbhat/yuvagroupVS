@@ -73,7 +73,7 @@ export function SelectedServicesSection({
         </div>
 
         {!isFullPage ? (
-          <div className="mt-5 inline-flex items-center gap-2 rounded-lg border border-clay/50 bg-clay/20 px-3 py-2 text-sm font-semibold text-bronze">
+          <div className="mt-5 inline-flex items-center gap-2 rounded-lg border border-hairline bg-sand-deep px-3 py-2 text-sm font-semibold text-bronze">
             <ClipboardCheck className="h-4 w-4" />
             Detailed process, amenities, and handover support are on the services page.
           </div>

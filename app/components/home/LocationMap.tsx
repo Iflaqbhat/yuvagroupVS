@@ -15,7 +15,7 @@ export function LocationMap() {
           referrerPolicy="no-referrer-when-downgrade"
           className="h-full w-full border-0 grayscale-[0.12] transition duration-500 group-hover:scale-[1.015]"
         />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,248,237,0.12),rgba(9,9,11,0.08))]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(9,9,11,0.08))]" />
         <div className="absolute left-4 top-4 rounded-xl border border-hairline bg-sand/95 p-4 shadow-xl backdrop-blur-md">
           <div className="flex items-start gap-3">
             <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-bronze text-[#ffffff] shadow-sm">

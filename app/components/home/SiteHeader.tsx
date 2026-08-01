@@ -168,7 +168,7 @@ function ProjectsMenu() {
             onMouseLeave={scheduleClose}
             className="absolute left-1/2 top-full z-50 mt-3 w-[1024px] max-w-[calc(100vw-2rem)]"
           >
-            <div className="overflow-hidden rounded-2xl border border-hairline bg-sand shadow-[0_28px_70px_-16px_rgba(60,45,30,0.28)]">
+            <div className="overflow-hidden rounded-2xl border border-hairline bg-sand shadow-[0_28px_70px_-16px_rgba(15,23,42,0.25)]">
               <div className="h-px bg-gradient-to-r from-transparent via-bronze to-transparent" />
               <motion.div
                 variants={menuContainer}
@@ -305,7 +305,7 @@ export function SiteHeader() {
                 type="button"
                 aria-expanded={mobileProjectsOpen}
                 onClick={() => setMobileProjectsOpen((open) => !open)}
-                className="group flex items-center justify-between rounded-lg border border-hairline bg-sand px-3 py-3 text-sm font-semibold text-ink transition hover:border-clay/70 hover:bg-clay/20 hover:text-bronze"
+                className="group flex items-center justify-between rounded-lg border border-hairline bg-sand px-3 py-3 text-sm font-semibold text-ink transition hover:border-clay/70 hover:bg-sand-deep hover:text-bronze"
               >
                 Projects
                 <ChevronDown
@@ -337,7 +337,7 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="group flex items-center justify-between rounded-lg border border-hairline bg-sand px-3 py-3 text-sm font-semibold text-ink transition hover:border-clay/70 hover:bg-clay/20 hover:text-bronze"
+                  className="group flex items-center justify-between rounded-lg border border-hairline bg-sand px-3 py-3 text-sm font-semibold text-ink transition hover:border-clay/70 hover:bg-sand-deep hover:text-bronze"
                 >
                   {item.label}
                   <ArrowRight className="h-4 w-4 text-ink-soft transition group-hover:translate-x-0.5 group-hover:text-bronze" />
@@ -368,8 +368,8 @@ function MobileSubLink({
       onClick={onClick}
       className={`group flex items-center justify-between rounded-lg border px-3 py-2.5 text-sm font-semibold transition ${
         primary
-          ? "border-clay/50 bg-clay/20 text-bronze hover:border-clay/70 hover:bg-sand-deep"
-          : "border-hairline bg-sand text-ink-soft hover:border-clay/50 hover:bg-clay/20 hover:text-bronze"
+          ? "border-clay/50 bg-sand-deep text-bronze hover:border-clay/70 hover:bg-sand-deep"
+          : "border-hairline bg-sand text-ink-soft hover:bg-sand-deep hover:text-bronze"
       }`}
     >
       {label}

@@ -38,7 +38,7 @@ export function FeaturedProjectsSection() {
               whileHover={{ y: -8 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ type: "spring", stiffness: 320, damping: 28, delay: index * 0.05 }}
-              className="group relative isolate h-[27rem] overflow-hidden rounded-xl border border-hairline bg-ink shadow-sm transition hover:border-clay hover:shadow-[0_24px_70px_rgba(120,95,70,0.22)]"
+              className="group relative isolate h-[27rem] overflow-hidden rounded-xl border border-hairline bg-ink shadow-sm transition hover:border-clay hover:shadow-[0_24px_70px_rgba(15,23,42,0.18)]"
             >
               <img
                 src={project.image}
