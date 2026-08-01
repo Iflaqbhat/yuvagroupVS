@@ -10,7 +10,6 @@ import {
   heroVideo,
   projectImages
 } from "./data";
-import { ThreeDBackground } from "./ThreeDBackground";
 
 export function HeroSection() {
   return (
@@ -28,8 +27,6 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,9,11,0.94)_0%,rgba(9,9,11,0.72)_48%,rgba(12,74,110,0.42)_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_30%,rgba(14,165,233,0.22),transparent_34%)]" />
-      <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-25 mix-blend-screen" />
-      <ThreeDBackground />
 
       <div
         className="relative mx-auto flex max-w-7xl flex-col px-4 py-12 sm:px-6 lg:px-8"

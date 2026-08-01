@@ -24,8 +24,7 @@ export const projectImages = [
   "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80"
 ];
 
-export const heroVideo =
-  "https://assets.mixkit.co/videos/23511/23511-720.mp4";
+export const heroVideo = "/video/hero.mp4";
 
 export const projects = [
   {

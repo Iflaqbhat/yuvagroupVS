@@ -58,14 +58,6 @@ img {
   max-width: 100%;
 }
 
-.blueprint-grid {
-  background-image:
-    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(to bottom, black 0%, black 58%, transparent 100%);
-}
-
 .metal-panel {
   background:
     linear-gradient(180deg, rgba(255, 248, 237, 0.96), rgba(245, 239, 228, 0.9)),
