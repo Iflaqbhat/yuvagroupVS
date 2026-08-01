@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5efe4;
+  --foreground: #09090b;
+  --site-cream: #fff8ed;
+  --site-cream-deep: #fbf3e6;
+  --site-cream-muted: #f5efe4;
+  --site-blue: #2563eb;
+  --site-cyan: #06b6d4;
+  --site-green: #10b981;
+  --site-sky: #0284c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  letter-spacing: 0;
+}
+
+input,
+select,
+textarea {
+  background-color: var(--site-cream);
+  color: var(--foreground);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #78716c;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black 0%, black 58%, transparent 100%);
+}
+
+.metal-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 237, 0.96), rgba(245, 239, 228, 0.9)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.04) 0,
+      rgba(15, 23, 42, 0.04) 1px,
+      transparent 1px,
+      transparent 18px
+    );
+}
+
+.section-rule {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(15, 23, 42, 0.14),
+    transparent
+  );
+}
+
+.hiring-border {
+  position: relative;
+}
+
+.hiring-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--site-blue),
+    var(--site-cyan),
+    var(--site-green),
+    var(--site-sky),
+    var(--site-blue)
+  );
+  background-size: 240% 100%;
+  animation: hiring-border 7s linear infinite;
+}
+
+@keyframes hiring-border {
+  to {
+    background-position: 240% 0;
+  }
+}
+
+.marquee-track {
+  animation: marquee 24s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
