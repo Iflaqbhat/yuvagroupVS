@@ -57,7 +57,7 @@ export function PremiumFooter() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="relative overflow-hidden bg-[#101820] text-[#fff8ed]"
+      className="relative overflow-hidden bg-[#101820] text-[#ffffff]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_15%,rgba(14,165,233,0.22),transparent_30%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.12),transparent_34%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,248,237,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(255,248,237,0.045)_1px,transparent_1px)] bg-[size:44px_44px]" />
@@ -66,7 +66,7 @@ export function PremiumFooter() {
         <div className="grid gap-10 lg:grid-cols-[1.15fr_1.85fr]">
           <div>
             <a href="/" className="group inline-flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-[#fff8ed] text-zinc-950 shadow-sm transition group-hover:-translate-y-0.5 group-hover:bg-sky-200">
+              <span className="grid h-11 w-11 place-items-center rounded-xl bg-[#ffffff] text-zinc-950 shadow-sm transition group-hover:-translate-y-0.5 group-hover:bg-sky-200">
                 <Building2 className="h-6 w-6" />
               </span>
               <span>
@@ -89,7 +89,7 @@ export function PremiumFooter() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={item.label}
-                  className="grid h-10 w-10 place-items-center rounded-lg border border-[#fff8ed]/10 bg-[#fff8ed]/10 text-zinc-300 transition hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-500/15 hover:text-sky-200"
+                  className="grid h-10 w-10 place-items-center rounded-lg border border-[#ffffff]/10 bg-[#ffffff]/10 text-zinc-300 transition hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-500/15 hover:text-sky-200"
                 >
                   <item.icon className="h-4 w-4" />
                 </a>
@@ -105,7 +105,7 @@ export function PremiumFooter() {
             />
 
             <div>
-              <h3 className="text-sm font-semibold text-[#fff8ed]">Contact</h3>
+              <h3 className="text-sm font-semibold text-[#ffffff]">Contact</h3>
               <div className="mt-4 space-y-3 text-sm text-zinc-300">
                 <a
                   href={`tel:${visitLocation.phone.replaceAll(" ", "")}`}
@@ -134,7 +134,7 @@ export function PremiumFooter() {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-[#fff8ed]">Legal</h3>
+              <h3 className="text-sm font-semibold text-[#ffffff]">Legal</h3>
               <div className="mt-4 space-y-3">
                 {legalLinks.map(([label, href]) => (
                   <a
@@ -153,10 +153,10 @@ export function PremiumFooter() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-4 border-t border-[#fff8ed]/10 pt-6 text-xs leading-5 text-zinc-400 md:grid-cols-[1fr_auto] md:items-center">
+        <div className="mt-12 grid gap-4 border-t border-[#ffffff]/10 pt-6 text-xs leading-5 text-zinc-400 md:grid-cols-[1fr_auto] md:items-center">
           <p>Copyright © 2026 Yuva Group. All rights reserved.</p>
           <div className="flex flex-wrap gap-3">
-            <span className="inline-flex items-center gap-2 rounded-lg border border-[#fff8ed]/10 bg-[#fff8ed]/10 px-3 py-2 text-zinc-300">
+            <span className="inline-flex items-center gap-2 rounded-lg border border-[#ffffff]/10 bg-[#ffffff]/10 px-3 py-2 text-zinc-300">
               <ShieldCheck className="h-4 w-4 text-sky-300" />
               RERA and legal disclosures to be verified before launch
             </span>
@@ -176,7 +176,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold text-[#fff8ed]">{title}</h3>
+      <h3 className="text-sm font-semibold text-[#ffffff]">{title}</h3>
       <div className="mt-4 space-y-3">
         {links.map(([label, href]) => (
           <a

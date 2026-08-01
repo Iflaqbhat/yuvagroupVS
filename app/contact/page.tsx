@@ -5,7 +5,7 @@ import { StickyCTA } from "../components/home/StickyCTA";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#f5efe4] pb-20 text-zinc-950 md:pb-0">
+    <main className="min-h-screen bg-[#ffffff] pb-20 text-zinc-950 md:pb-0">
       <SiteHeader />
       <BookVisitSection />
       <PremiumFooter />

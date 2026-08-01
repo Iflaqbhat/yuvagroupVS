@@ -24,7 +24,7 @@ export function ProjectConsole({
 }: ProjectConsoleProps) {
   return (
     <div className="metal-panel overflow-hidden rounded-lg border border-zinc-200 shadow-soft-panel">
-      <div className="flex flex-col gap-4 border-b border-zinc-200 bg-[#fff8ed]/80 p-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 border-b border-zinc-200 bg-[#ffffff]/80 p-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="flex items-center gap-2 text-sm font-semibold text-zinc-900">
             <Construction className="h-4 w-4 text-sky-600" />
@@ -35,7 +35,7 @@ export function ProjectConsole({
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-1 rounded-lg border border-zinc-200 bg-[#fbf3e6] p-1">
+        <div className="grid grid-cols-3 gap-1 rounded-lg border border-zinc-200 bg-[#ffffff] p-1">
           {projects.map((project, index) => (
             <button
               key={project.name}
@@ -43,8 +43,8 @@ export function ProjectConsole({
               onClick={() => setActiveProject(index)}
               className={`h-9 rounded-md px-2 text-xs font-semibold transition ${
                 activeProject === index
-                  ? "bg-zinc-950 text-[#fff8ed] shadow-sm"
-                  : "text-zinc-600 hover:bg-[#fff8ed] hover:text-zinc-950"
+                  ? "bg-zinc-950 text-[#ffffff] shadow-sm"
+                  : "text-zinc-600 hover:bg-[#ffffff] hover:text-zinc-950"
               }`}
             >
               {project.name.replace("Yuva ", "")}
@@ -65,7 +65,7 @@ export function ProjectConsole({
               transition={{ duration: 0.45 }}
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-x-3 bottom-3 rounded-lg bg-[#fff8ed]/95 p-3 shadow-lg">
+            <div className="absolute inset-x-3 bottom-3 rounded-lg bg-[#ffffff]/95 p-3 shadow-lg">
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <p className="text-sm font-semibold text-zinc-950">
@@ -75,7 +75,7 @@ export function ProjectConsole({
                     {selectedProject.location}
                   </p>
                 </div>
-                <span className="rounded-md bg-zinc-950 px-2 py-1 text-xs font-semibold text-[#fff8ed]">
+                <span className="rounded-md bg-zinc-950 px-2 py-1 text-xs font-semibold text-[#ffffff]">
                   {selectedProject.stage}
                 </span>
               </div>
@@ -89,7 +89,7 @@ export function ProjectConsole({
               ["Homes", selectedProject.homes],
               ["Booking", selectedProject.price]
             ].map(([label, value]) => (
-              <div key={label} className="rounded-lg border border-zinc-200 bg-[#fff8ed] p-3">
+              <div key={label} className="rounded-lg border border-zinc-200 bg-[#ffffff] p-3">
                 <p className="text-xs font-medium text-zinc-500">{label}</p>
                 <p className="mt-1 text-sm font-semibold text-zinc-950">{value}</p>
               </div>
@@ -110,7 +110,7 @@ export function ProjectConsole({
                 transition={{ delay: index * 0.08 }}
                 className="flex gap-3 border-b border-zinc-200 pb-3 last:border-b-0 last:pb-0"
               >
-                <span className="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-zinc-950 text-[#fff8ed]">
+                <span className="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-zinc-950 text-[#ffffff]">
                   <CheckCircle2 className="h-4 w-4" />
                 </span>
                 <span>
@@ -142,7 +142,7 @@ export function ImageRail() {
           alt="Construction cranes and structure"
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-        <figcaption className="absolute inset-x-3 bottom-3 rounded-lg bg-[#fff8ed]/95 p-3 text-sm font-semibold text-zinc-950 shadow-lg">
+        <figcaption className="absolute inset-x-3 bottom-3 rounded-lg bg-[#ffffff]/95 p-3 text-sm font-semibold text-zinc-950 shadow-lg">
           Construction tracked from foundation to handover
         </figcaption>
       </motion.figure>
@@ -156,7 +156,7 @@ export function ImageRail() {
           alt="Construction planning table"
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-        <figcaption className="absolute inset-x-3 bottom-3 rounded-lg bg-[#fff8ed]/95 p-3 text-sm font-semibold text-zinc-950 shadow-lg">
+        <figcaption className="absolute inset-x-3 bottom-3 rounded-lg bg-[#ffffff]/95 p-3 text-sm font-semibold text-zinc-950 shadow-lg">
           Transparent planning for buyers and investors
         </figcaption>
       </motion.figure>

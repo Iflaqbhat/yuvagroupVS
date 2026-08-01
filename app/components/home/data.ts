@@ -103,8 +103,85 @@ export const projects = [
 
 export type Project = (typeof projects)[number];
 
+export const completedProjects = [
+  {
+    slug: "yuva-residency",
+    name: "Yuva Residency",
+    stage: "Completed",
+    location: "Chandapura, off Hosur Road",
+    headline: "A settled community with keys delivered and residents moved in.",
+    description:
+      "Yuva Residency is a completed, fully occupied community off Hosur Road. Homes were handed over on schedule with finished common areas, working amenities, and a neighbourhood that has been living in it for years — proof of Yuva Group's delivery discipline.",
+    homes: "2 & 3 BHK",
+    price: "Sold out",
+    progress: 100,
+    possession: "Handed over",
+    area: "780 – 1,260 sq.ft.",
+    highlights: [
+      "Keys delivered on schedule",
+      "Occupied, settled community",
+      "Finished amenities & landscaping",
+      "Established neighbourhood off Hosur Road",
+      "Documentation completed for all owners",
+      "Rental-ready demand in the area"
+    ],
+    image: projectImages[3],
+    color: "bg-indigo-600"
+  },
+  {
+    slug: "yuva-heritage",
+    name: "Yuva Heritage",
+    stage: "Completed",
+    location: "Anekal, near the industrial belt",
+    headline: "Comfortable homes delivered near Anekal's growth belt.",
+    description:
+      "Yuva Heritage delivered comfortable 2 and 3 BHK homes near Anekal's industrial belt. The project completed with full documentation, common amenities in working order, and a resident community that continues to grow around it.",
+    homes: "2 & 3 BHK",
+    price: "Sold out",
+    progress: 100,
+    possession: "Handed over",
+    area: "800 – 1,340 sq.ft.",
+    highlights: [
+      "Completed and handed over",
+      "Near Anekal industrial belt",
+      "Working common amenities",
+      "Full documentation support",
+      "Gated community with security",
+      "Good commute access to Hosur Road"
+    ],
+    image: projectImages[4],
+    color: "bg-amber-600"
+  },
+  {
+    slug: "yuva-lake-view",
+    name: "Yuva Lake View",
+    stage: "Completed",
+    location: "Attibele, off Hosur Road",
+    headline: "A delivered project with calm surroundings and easy access.",
+    description:
+      "Yuva Lake View is a completed residential project near Attibele, off Hosur Road. Homes were handed over with finished interiors, active amenities, and a calm setting that continues to hold value for residents and investors alike.",
+    homes: "1, 2 & 3 BHK",
+    price: "Sold out",
+    progress: 100,
+    possession: "Handed over",
+    area: "690 – 1,280 sq.ft.",
+    highlights: [
+      "Completed with keys delivered",
+      "Calm, green surroundings",
+      "Active community amenities",
+      "Easy access to Hosur Road",
+      "Strong rental demand",
+      "All documentation completed"
+    ],
+    image: projectImages[0],
+    color: "bg-teal-600"
+  }
+];
+
+export const allProjects = [...projects, ...completedProjects];
+
 export function getProjectBySlug(slug: string) {
-  return projects.find((project) => project.slug === slug);
+  return allProjects.find((project) => project.slug === slug);
 }
 
 export const propertyHighlights = [
@@ -174,53 +251,6 @@ export const roles = [
   "Project Supervisor",
   "Telecaller",
   "Accounts Executive"
-];
-
-export const navPreviews = [
-  {
-    href: "/projects",
-    label: "Projects",
-    eyebrow: "Current Work",
-    title: "Open the project portfolio",
-    copy: "Compare active sites, ready homes, locations, and construction progress before booking a visit.",
-    image: projectImages[1],
-    stat: "3 featured sites",
-    highlights: ["Active inventory", "Progress view", "Visit-ready details"],
-    icon: Building2
-  },
-  {
-    href: "/services",
-    label: "Services",
-    eyebrow: "Buyer Support",
-    title: "Review the services behind every handover",
-    copy: "Site visits, plan review, documentation support, project updates, and handover coordination are organized clearly.",
-    image: projectImages[3],
-    stat: "6 buyer services",
-    highlights: ["Site walkthroughs", "Plan review", "Handover support"],
-    icon: ClipboardCheck
-  },
-  {
-    href: "/about",
-    label: "About",
-    eyebrow: "Company",
-    title: "Understand the builder behind the homes",
-    copy: "A concise look at Yuva Group's planning approach, growth-corridor focus, and buyer-first project communication.",
-    image: projectImages[2],
-    stat: "10+ projects",
-    highlights: ["Builder profile", "Growth corridors", "Buyer-first process"],
-    icon: Trees
-  },
-  {
-    href: "/contact",
-    label: "Contact",
-    eyebrow: "Site Visit",
-    title: "Book the next project walkthrough",
-    copy: "Share your preferred project, budget, and visit window so the team can guide the next best step.",
-    image: projectImages[4],
-    stat: "24h response",
-    highlights: ["Call sales", "Email inquiry", "Book site visit"],
-    icon: BriefcaseBusiness
-  }
 ];
 
 export const projectSignals = [
@@ -294,6 +324,7 @@ export const amenityDetails = [
 export const buyerFeedback = [
   {
     title: "Site visit clarity",
+    name: "Rahul Sharma",
     quote:
       "The project team walked us through the actual site progress, not only the brochure view.",
     project: "Yuva Utsav",
@@ -301,6 +332,7 @@ export const buyerFeedback = [
   },
   {
     title: "Location confidence",
+    name: "Priya Nair",
     quote:
       "We could compare connectivity, school routes, and available units before making the next call.",
     project: "Yuva Sunshine",
@@ -308,6 +340,7 @@ export const buyerFeedback = [
   },
   {
     title: "Handover support",
+    name: "Kiran Kumar",
     quote:
       "The documentation and possession checklist made the buying process feel much more organized.",
     project: "Yuva Sunrise",

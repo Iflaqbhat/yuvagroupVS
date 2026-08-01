@@ -13,7 +13,7 @@ export function AmenitiesSection() {
   const selectedAmenity = amenityDetails[activeAmenity % amenityDetails.length];
 
   return (
-    <section id="amenities" className="bg-[#f5efe4] py-20 sm:py-24">
+    <section id="amenities" className="bg-[#ffffff] py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Amenities"
@@ -42,11 +42,11 @@ export function AmenitiesSection() {
                 whileHover={{ y: -4 }}
                 role="button"
                 tabIndex={0}
-                className={`group rounded-lg border bg-[#fff8ed] p-4 shadow-sm transition duration-200 hover:border-sky-300 hover:shadow-soft-panel ${
+                className={`group rounded-lg border bg-[#ffffff] p-4 shadow-sm transition duration-200 hover:border-sky-300 hover:shadow-soft-panel ${
                   activeAmenity === index ? "border-sky-300 shadow-soft-panel" : "border-zinc-200"
                 }`}
               >
-                <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#fff8ed] transition group-hover:bg-sky-600 group-hover:text-[#fff8ed]">
+                <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#ffffff] transition group-hover:bg-sky-600 group-hover:text-[#ffffff]">
                   <amenity.icon className="h-5 w-5" />
                 </span>
                 <p className="mt-4 text-sm font-semibold text-zinc-950">{amenity.label}</p>
@@ -62,7 +62,7 @@ export function AmenitiesSection() {
             initial={{ opacity: 0, x: 18 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
-            className="group overflow-hidden rounded-lg border border-zinc-200 bg-[#fff8ed] shadow-soft-panel"
+            className="group overflow-hidden rounded-lg border border-zinc-200 bg-[#ffffff] shadow-soft-panel"
           >
             <div className="relative h-80 overflow-hidden bg-zinc-200">
               <img
@@ -75,7 +75,7 @@ export function AmenitiesSection() {
                 <p className="text-sm font-semibold text-sky-200">
                   {amenities[activeAmenity].label}
                 </p>
-                <h3 className="mt-1 text-3xl font-semibold text-[#fff8ed]">
+                <h3 className="mt-1 text-3xl font-semibold text-[#ffffff]">
                   {selectedAmenity.title}
                 </h3>
               </div>
@@ -87,7 +87,7 @@ export function AmenitiesSection() {
               {["Resident-first planning", "Built for repeated use"].map((item) => (
                 <div
                   key={item}
-                  className="rounded-lg border border-zinc-200 bg-[#f5efe4] p-3 text-sm font-semibold text-zinc-800 transition hover:border-sky-300 hover:bg-[#fff8ed]"
+                  className="rounded-lg border border-zinc-200 bg-[#ffffff] p-3 text-sm font-semibold text-zinc-800 transition hover:border-sky-300 hover:bg-[#ffffff]"
                 >
                   {item}
                 </div>

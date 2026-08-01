@@ -15,7 +15,7 @@ export function ProcessSection() {
   const SelectedStepIcon = selectedStep.icon;
 
   return (
-    <section id="process" className="overflow-hidden border-y border-zinc-200 bg-[#fff8ed] py-20 sm:py-24">
+    <section id="process" className="overflow-hidden border-y border-zinc-200 bg-[#ffffff] py-20 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.86fr_1.14fr] lg:px-8">
         <div>
           <SectionHeading
@@ -27,14 +27,14 @@ export function ProcessSection() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="/contact"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-[#fff8ed] hover:shadow-sm"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-white hover:shadow-sm"
             >
               Start inquiry
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href="mailto:enquiry@yuvastructures.com"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-zinc-200 bg-[#fff8ed] px-5 text-sm font-semibold text-sky-700 transition hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-800 hover:shadow-sm"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-white ring-1 ring-sky-400/30 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-white hover:shadow-sm"
             >
               Email sales
               <Mail className="h-4 w-4" />
@@ -88,14 +88,14 @@ export function ProcessSection() {
               transition={{ delay: index * 0.08 }}
               role="button"
               tabIndex={0}
-              className={`group flex min-h-[15rem] flex-col rounded-lg border p-5 transition duration-200 hover:border-sky-300 hover:bg-[#fff8ed] hover:shadow-soft-panel ${
+              className={`group flex min-h-[15rem] flex-col rounded-lg border p-5 transition duration-200 hover:border-sky-300 hover:bg-[#ffffff] hover:shadow-soft-panel ${
                 activeStep === index
-                  ? "border-sky-300 bg-[#fff8ed] shadow-soft-panel"
-                  : "border-zinc-200 bg-[#f5efe4]"
+                  ? "border-sky-300 bg-[#ffffff] shadow-soft-panel"
+                  : "border-zinc-200 bg-[#ffffff]"
               }`}
             >
               <div className="flex items-center justify-between gap-4">
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#fff8ed] text-zinc-950 shadow-sm transition group-hover:bg-sky-600 group-hover:text-[#fff8ed]">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#ffffff] text-zinc-950 shadow-sm transition group-hover:bg-sky-600 group-hover:text-[#ffffff]">
                   <item.icon className="h-5 w-5" />
                 </span>
                 <span className="text-2xl font-semibold text-zinc-300">{item.metric}</span>

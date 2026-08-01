@@ -13,7 +13,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function BookVisitSection() {
   return (
-    <section id="book-visit" className="bg-[#f5efe4] py-16 sm:py-20">
+    <section id="book-visit" className="bg-[#ffffff] py-16 sm:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.04fr_0.96fr] lg:px-8">
         <div>
           <SectionHeading
@@ -26,7 +26,7 @@ export function BookVisitSection() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <a
               href={`tel:${visitLocation.phone.replaceAll(" ", "")}`}
-              className="group flex items-center gap-3 rounded-lg border border-zinc-200 bg-[#fff8ed] p-4 text-sm font-semibold text-zinc-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-soft-panel"
+              className="group flex items-center gap-3 rounded-lg border border-zinc-200 bg-[#ffffff] p-4 text-sm font-semibold text-zinc-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-soft-panel"
             >
               <Phone className="h-5 w-5 text-sky-600 transition group-hover:scale-110" />
               <span>
@@ -36,7 +36,7 @@ export function BookVisitSection() {
             </a>
             <a
               href={`mailto:${visitLocation.email}`}
-              className="group flex items-center gap-3 rounded-lg border border-zinc-200 bg-[#fff8ed] p-4 text-sm font-semibold text-zinc-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-soft-panel"
+              className="group flex items-center gap-3 rounded-lg border border-zinc-200 bg-[#ffffff] p-4 text-sm font-semibold text-zinc-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-soft-panel"
             >
               <Mail className="h-5 w-5 text-sky-600 transition group-hover:scale-110" />
               <span>
@@ -51,7 +51,7 @@ export function BookVisitSection() {
           </div>
         </div>
 
-        <form className="self-start rounded-xl border border-zinc-200 bg-[#fff8ed] p-5 shadow-soft-panel transition hover:border-sky-200 sm:p-6 lg:sticky lg:top-28">
+        <form className="self-start rounded-xl border border-zinc-200 bg-[#ffffff] p-5 shadow-soft-panel transition hover:border-sky-200 sm:p-6 lg:sticky lg:top-28">
           <div className="inline-flex items-center gap-2 rounded-lg border border-sky-200 bg-sky-50 px-3 py-2 text-sm font-semibold text-sky-800">
             <CalendarDays className="h-4 w-4" />
             Site visit request
@@ -92,7 +92,7 @@ export function BookVisitSection() {
 
           <button
             type="button"
-            className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-[#fff8ed] hover:shadow-sm"
+            className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-white hover:shadow-sm"
           >
             Book site visit
             <ArrowRight className="h-4 w-4" />

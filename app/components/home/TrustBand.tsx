@@ -9,11 +9,11 @@ const stats = [
 
 export function TrustBand() {
   return (
-    <section className="border-b border-zinc-200 bg-[#fff8ed]">
+    <section className="border-b border-zinc-200 bg-[#ffffff]">
       <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 md:grid-cols-4 lg:px-8">
         {stats.map(([value, label]) => (
           <div key={label} className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#fff8ed]">
+            <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#ffffff]">
               <BadgeCheck className="h-5 w-5" />
             </span>
             <span>

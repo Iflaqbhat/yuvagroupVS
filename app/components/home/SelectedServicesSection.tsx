@@ -27,7 +27,7 @@ const services = [
 
 export function SelectedServicesSection() {
   return (
-    <section className="bg-[#f5efe4] py-16 sm:py-20">
+    <section className="bg-[#ffffff] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
@@ -38,7 +38,7 @@ export function SelectedServicesSection() {
           />
           <a
             href="/services"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-[#fff8ed] hover:shadow-sm"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-white hover:shadow-sm"
           >
             View services
             <ArrowRight className="h-4 w-4" />
@@ -49,9 +49,9 @@ export function SelectedServicesSection() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="group rounded-lg border border-zinc-200 bg-[#fff8ed] p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-300 hover:shadow-soft-panel"
+              className="group rounded-lg border border-zinc-200 bg-[#ffffff] p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-300 hover:shadow-soft-panel"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-lg bg-zinc-950 text-[#fff8ed] transition group-hover:bg-sky-600">
+              <span className="grid h-11 w-11 place-items-center rounded-lg bg-zinc-950 text-[#ffffff] transition group-hover:bg-sky-600">
                 <service.icon className="h-5 w-5" />
               </span>
               <h3 className="mt-5 text-lg font-semibold text-zinc-950">{service.title}</h3>

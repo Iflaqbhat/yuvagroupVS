@@ -42,7 +42,7 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
             {signals.map((signal) => (
               <div
                 key={signal.title}
-                className="rounded-xl border border-zinc-200 bg-[#fff8ed] p-4"
+                className="rounded-xl border border-zinc-200 bg-[#ffffff] p-4"
               >
                 <signal.icon className="h-5 w-5 text-sky-600" />
                 <h3 className="mt-3 text-sm font-semibold text-zinc-950">
@@ -56,7 +56,7 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
           </div>
         </div>
 
-        <div className="rounded-2xl border border-zinc-200 bg-[#fff8ed] p-6">
+        <div className="rounded-2xl border border-zinc-200 bg-[#ffffff] p-6">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
             Key highlights
           </h3>

@@ -24,7 +24,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ type: "spring", stiffness: 320, damping: 26, delay: index * 0.05 }}
-      className="group relative isolate flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-[#fff8ed] shadow-sm outline-none transition duration-200 hover:-translate-y-1 hover:border-sky-400 hover:shadow-[0_16px_40px_rgba(2,132,199,0.12)]"
+      className="group relative isolate flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-[#ffffff] shadow-sm outline-none transition duration-200 hover:-translate-y-1 hover:border-sky-400 hover:shadow-[0_16px_40px_rgba(2,132,199,0.12)]"
     >
       <div className="relative h-52 shrink-0 overflow-hidden bg-zinc-200">
         <img
@@ -33,7 +33,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-zinc-950/5 to-transparent" />
-        <span className="absolute left-3 top-3 rounded-md bg-[#fff8ed] px-2 py-1 text-xs font-semibold text-zinc-900 shadow-sm">
+        <span className="absolute left-3 top-3 rounded-md bg-[#ffffff] px-2 py-1 text-xs font-semibold text-zinc-900 shadow-sm">
           {project.stage}
         </span>
       </div>
@@ -55,13 +55,13 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <p className="mt-4 text-sm leading-6 text-zinc-600">{project.headline}</p>
 
         <div className="mt-5 grid grid-cols-2 gap-2 text-sm">
-          <div className="rounded-lg border border-zinc-200 bg-[#fff8ed]/80 p-3">
+          <div className="rounded-lg border border-zinc-200 bg-[#ffffff]/80 p-3">
             <span className="block text-zinc-500">Homes</span>
             <span className="mt-1 block font-semibold text-zinc-950">
               {project.homes}
             </span>
           </div>
-          <div className="rounded-lg border border-zinc-200 bg-[#fff8ed]/80 p-3">
+          <div className="rounded-lg border border-zinc-200 bg-[#ffffff]/80 p-3">
             <span className="block text-zinc-500">Booking</span>
             <span className="mt-1 block font-semibold text-zinc-950">
               {project.price}

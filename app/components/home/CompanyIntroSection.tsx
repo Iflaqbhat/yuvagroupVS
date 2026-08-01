@@ -25,7 +25,7 @@ const introPoints = [
 
 export function CompanyIntroSection() {
   return (
-    <section className="border-b border-zinc-200 bg-[#fff8ed] py-16 sm:py-20">
+    <section className="border-b border-zinc-200 bg-[#ffffff] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Yuva Group"
@@ -37,9 +37,9 @@ export function CompanyIntroSection() {
           {introPoints.map((item) => (
             <div
               key={item.title}
-              className="group rounded-lg border border-zinc-200 bg-[#f5efe4] p-5 transition hover:-translate-y-1 hover:border-sky-300 hover:bg-[#fff8ed] hover:shadow-soft-panel"
+              className="group rounded-lg border border-zinc-200 bg-[#ffffff] p-5 transition hover:-translate-y-1 hover:border-sky-300 hover:bg-[#ffffff] hover:shadow-soft-panel"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#fff8ed] transition group-hover:bg-sky-600">
+              <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#ffffff] transition group-hover:bg-sky-600">
                 <item.icon className="h-5 w-5" />
               </span>
               <h3 className="mt-5 text-lg font-semibold text-zinc-950">{item.title}</h3>
