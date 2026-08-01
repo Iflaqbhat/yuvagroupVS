@@ -26,7 +26,7 @@ export default async function ProjectDetailPage({
   }
 
   return (
-    <main className="min-h-screen bg-[#ffffff] pb-20 text-zinc-950 md:pb-0">
+    <main className="min-h-screen bg-sand pb-20 text-ink md:pb-0">
       <SiteHeader />
       <ProjectHero project={project} />
       <ProjectOverview project={project} />

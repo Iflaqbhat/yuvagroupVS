@@ -7,7 +7,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function BuyerFeedbackSection() {
   return (
-    <section className="border-y border-zinc-200 bg-[#ffffff] py-20 sm:py-24">
+    <section className="border-y border-hairline bg-sand py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Buyer Confidence"
@@ -24,26 +24,26 @@ export function BuyerFeedbackSection() {
               whileHover={{ y: -6 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: index * 0.08 }}
-              className="group overflow-hidden rounded-lg border border-zinc-200 bg-[#ffffff] shadow-sm transition duration-200 hover:border-sky-300 hover:bg-[#ffffff] hover:shadow-soft-panel"
+              className="group overflow-hidden rounded-lg border border-hairline bg-sand shadow-sm transition duration-200 hover:border-clay/70 hover:bg-sand hover:shadow-soft-panel"
             >
-              <div className="relative h-48 overflow-hidden bg-zinc-200">
+              <div className="relative h-48 overflow-hidden bg-sand-deep">
                 <img
                   src={item.image}
                   alt={`${item.project} buyer confidence`}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-transparent to-transparent" />
-                <span className="absolute bottom-3 left-3 rounded-md bg-[#ffffff] px-3 py-2 text-xs font-semibold text-zinc-950 shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-3 rounded-md bg-sand px-3 py-2 text-xs font-semibold text-ink shadow-lg">
                   {item.name}
                 </span>
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-lg font-semibold text-zinc-950">{item.title}</h3>
-                  <BadgeCheck className="h-5 w-5 text-sky-600 transition group-hover:scale-110" />
+                  <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
+                  <BadgeCheck className="h-5 w-5 text-bronze transition group-hover:scale-110" />
                 </div>
-                <p className="mt-4 text-sm leading-6 text-zinc-600">{item.quote}</p>
-                <p className="mt-4 text-xs font-semibold text-zinc-500">
+                <p className="mt-4 text-sm leading-6 text-ink-soft">{item.quote}</p>
+                <p className="mt-4 text-xs font-semibold text-ink-soft">
                   — {item.name}, {item.project}
                 </p>
               </div>

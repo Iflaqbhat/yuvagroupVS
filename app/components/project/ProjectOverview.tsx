@@ -28,13 +28,13 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
         <div>
-          <span className="text-xs font-semibold uppercase tracking-widest text-sky-600">
+          <span className="text-xs font-semibold uppercase tracking-widest text-bronze">
             About the project
           </span>
-          <h2 className="mt-3 text-3xl font-semibold text-zinc-950">
+          <h2 className="mt-3 text-3xl font-semibold text-ink">
             Living at {project.name}
           </h2>
-          <p className="mt-5 text-base leading-7 text-zinc-600">
+          <p className="mt-5 text-base leading-7 text-ink-soft">
             {project.description}
           </p>
 
@@ -42,13 +42,13 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
             {signals.map((signal) => (
               <div
                 key={signal.title}
-                className="rounded-xl border border-zinc-200 bg-[#ffffff] p-4"
+                className="rounded-xl border border-hairline bg-sand p-4"
               >
-                <signal.icon className="h-5 w-5 text-sky-600" />
-                <h3 className="mt-3 text-sm font-semibold text-zinc-950">
+                <signal.icon className="h-5 w-5 text-bronze" />
+                <h3 className="mt-3 text-sm font-semibold text-ink">
                   {signal.title}
                 </h3>
-                <p className="mt-1.5 text-xs leading-5 text-zinc-600">
+                <p className="mt-1.5 text-xs leading-5 text-ink-soft">
                   {signal.copy}
                 </p>
               </div>
@@ -56,17 +56,17 @@ export function ProjectOverview({ project }: ProjectOverviewProps) {
           </div>
         </div>
 
-        <div className="rounded-2xl border border-zinc-200 bg-[#ffffff] p-6">
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
+        <div className="rounded-2xl border border-hairline bg-sand p-6">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-ink-soft">
             Key highlights
           </h3>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {project.highlights.map((highlight) => (
               <li
                 key={highlight}
-                className="flex items-start gap-2.5 text-sm leading-6 text-zinc-700"
+                className="flex items-start gap-2.5 text-sm leading-6 text-ink-soft"
               >
-                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-sky-100 text-sky-700">
+                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-clay/30 text-bronze">
                   <Check className="h-3 w-3" />
                 </span>
                 {highlight}

@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Instrument_Serif, Work_Sans } from "next/font/google";
 import "./globals.css";
+
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap"
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap"
+});
 
 const siteTitle = "Yuva Group | Premium Homes in Bengaluru";
 const siteDescription =
@@ -31,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${instrumentSerif.variable} ${workSans.variable}`}>
       <body>{children}</body>
     </html>
   );

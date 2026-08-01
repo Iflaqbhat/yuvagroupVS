@@ -10,7 +10,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function ShortTestimonialsSection() {
   return (
-    <section className="bg-[#ffffff] py-16 sm:py-20">
+    <section className="bg-sand py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
@@ -21,7 +21,7 @@ export function ShortTestimonialsSection() {
           />
           <a
             href="/about"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-white ring-1 ring-sky-400/30 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-white hover:shadow-sm"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-semibold text-white ring-1 ring-bronze/30 transition hover:-translate-y-0.5 hover:bg-bronze-deep hover:text-white hover:shadow-sm"
           >
             About Yuva
             <ArrowRight className="h-4 w-4" />
@@ -37,18 +37,18 @@ export function ShortTestimonialsSection() {
               whileHover={{ y: -5 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: index * 0.05 }}
-              className="group rounded-lg border border-zinc-200 bg-[#ffffff] p-5 shadow-sm transition hover:border-sky-300 hover:shadow-soft-panel"
+              className="group rounded-lg border border-hairline bg-sand p-5 shadow-sm transition hover:border-clay/70 hover:shadow-soft-panel"
             >
               <div className="flex items-center justify-between gap-3">
-                <span className="grid h-10 w-10 place-items-center rounded-lg bg-zinc-950 text-[#ffffff] transition group-hover:bg-sky-600">
+                <span className="grid h-10 w-10 place-items-center rounded-lg bg-ink text-[#ffffff] transition group-hover:bg-bronze">
                   <BadgeCheck className="h-5 w-5" />
                 </span>
-                <span className="text-xs font-semibold text-zinc-500">
+                <span className="text-xs font-semibold text-ink-soft">
                   — {item.name}, {item.project}
                 </span>
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-zinc-950">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-600">{item.quote}</p>
+              <h3 className="mt-5 text-lg font-semibold text-ink">{item.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-ink-soft">{item.quote}</p>
             </motion.article>
           ))}
         </div>

@@ -9,7 +9,7 @@ import { StickyCTA } from "../components/home/StickyCTA";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#ffffff] pb-20 text-zinc-950 md:pb-0">
+    <main className="min-h-screen bg-sand pb-20 text-ink md:pb-0">
       <SiteHeader />
       <PageHero
         eyebrow="Services"
