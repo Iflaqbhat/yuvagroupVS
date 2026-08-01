@@ -8,11 +8,12 @@ import { PropertyHighlightsSection } from "./PropertyHighlightsSection";
 import { SelectedServicesSection } from "./SelectedServicesSection";
 import { ShortTestimonialsSection } from "./ShortTestimonialsSection";
 import { SiteHeader } from "./SiteHeader";
+import { StickyCTA } from "./StickyCTA";
 import { TrustBand } from "./TrustBand";
 
 export function HomePage() {
   return (
-    <main className="min-h-screen bg-[#f5efe4] text-zinc-950">
+    <main className="min-h-screen bg-[#f5efe4] pb-20 text-zinc-950 md:pb-0">
       <SiteHeader />
       <HeroSection />
       <PropertyHighlightsSection />
@@ -22,6 +23,7 @@ export function HomePage() {
       <ShortTestimonialsSection />
       <BookVisitSection />
       <PremiumFooter />
+      <StickyCTA />
     </main>
   );
 }

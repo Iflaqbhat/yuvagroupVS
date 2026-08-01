@@ -27,7 +27,7 @@ export function ProcessSection() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="/contact"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-600 hover:text-[#fff8ed] hover:shadow-sm"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-[#fff8ed] hover:shadow-sm"
             >
               Start inquiry
               <ArrowRight className="h-4 w-4" />
@@ -102,15 +102,6 @@ export function ProcessSection() {
               </div>
               <h3 className="mt-5 text-lg font-semibold text-zinc-950">{item.title}</h3>
               <p className="mt-2 text-sm leading-6 text-zinc-600">{item.copy}</p>
-              <div className="mt-auto pt-5">
-                <div className="h-1.5 overflow-hidden rounded-full bg-sky-100">
-                  <motion.div
-                    animate={{ width: activeStep === index ? "82%" : "38%" }}
-                    transition={{ duration: 0.25, ease: "easeOut" }}
-                    className="h-full rounded-full bg-sky-600"
-                  />
-                </div>
-              </div>
             </motion.article>
           ))}
         </div>

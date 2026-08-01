@@ -23,14 +23,14 @@ export function FinalCTASection() {
         <div className="flex flex-col gap-3 border-t border-[#fff8ed]/10 p-6 sm:flex-row lg:flex-col lg:justify-center lg:border-l lg:border-t-0 lg:p-10">
           <a
             href="/contact"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-[#fff8ed] px-5 text-sm font-semibold text-sky-950 transition hover:-translate-y-0.5 hover:bg-sky-50"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-[#fff8ed] px-5 text-sm font-semibold text-sky-950 transition hover:-translate-y-0.5 hover:bg-sky-50 hover:shadow-sm"
           >
             Book a visit
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="tel:+918282823395"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-[#fff8ed]/15 bg-[#fff8ed]/10 px-5 text-sm font-semibold text-[#fff8ed] transition hover:-translate-y-0.5 hover:border-sky-300 hover:bg-[#fff8ed]/15"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-[#fff8ed]/15 bg-[#fff8ed]/10 px-5 text-sm font-semibold text-[#fff8ed] transition hover:-translate-y-0.5 hover:border-sky-300 hover:bg-[#fff8ed]/15 hover:shadow-sm"
           >
             <Phone className="h-4 w-4" />
             Call sales

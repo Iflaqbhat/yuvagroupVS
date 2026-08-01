@@ -29,41 +29,84 @@ export const heroVideo =
 
 export const projects = [
   {
+    slug: "yuva-utsav",
     name: "Yuva Utsav",
     stage: "Ongoing",
     location: "Kammasandra, Electronic City Ph-2",
     headline: "Premium residences for modern IT-corridor living.",
+    description:
+      "Yuva Utsav brings premium living to Kammasandra, off Electronic City Phase 2. Designed around the daily rhythm of IT-corridor professionals, the project pairs spacious 1, 2 and 3 BHK residences with gated-community amenities, easy access to Hosur Road, and a construction timeline you can track at every stage.",
     homes: "1, 2 & 3 BHK",
     price: "From Rs. 50L*",
     progress: 72,
+    possession: "Mid 2027",
+    area: "820 – 1,450 sq.ft.",
+    highlights: [
+      "Gated community with 24/7 security",
+      "Covered parking for all units",
+      "Power backup for common areas",
+      "Clubhouse, pool & fitness deck",
+      "2 minutes to Electronic City Ph-2",
+      "RERA-registered development"
+    ],
     image: projectImages[1],
     color: "bg-blue-600"
   },
   {
+    slug: "yuva-sunshine",
     name: "Yuva Sunshine",
     stage: "Ongoing",
     location: "Chandapura to Anekal Main Road",
     headline: "Affordable apartments with daily connectivity built in.",
+    description:
+      "Yuva Sunshine is an affordable, thoughtfully planned apartment community on the Chandapura–Anekal main road. Every unit is designed for daily convenience — dependable connectivity, practical layouts, and shared amenities that keep weekend living easy without stretching the budget.",
     homes: "2 & 3 BHK",
     price: "Site visits open",
     progress: 64,
+    possession: "Early 2027",
+    area: "760 – 1,280 sq.ft.",
+    highlights: [
+      "Affordable 2 & 3 BHK layouts",
+      "Direct connectivity on Chandapura–Anekal road",
+      "School bus lounge & children's play zone",
+      "Rainwater harvesting & green landscape",
+      "Gated community with CCTV",
+      "Easy access to Hosur Road"
+    ],
     image: projectImages[2],
     color: "bg-emerald-500"
   },
   {
+    slug: "yuva-sunrise",
     name: "Yuva Sunrise",
     stage: "Ready To Move",
     location: "Attibele Industrial Area, off Hosur Road",
     headline: "Move-in-ready homes near the Bengaluru growth corridor.",
+    description:
+      "Yuva Sunrise is a move-in-ready address off Hosur Road near the Attibele industrial corridor. Buyers can walk into finished homes with completed documentation, working amenities, and a community that is already settled — no construction timeline to wait for.",
     homes: "1, 2 & 3 BHK",
     price: "Ready keys",
     progress: 96,
+    possession: "Ready now",
+    area: "800 – 1,420 sq.ft.",
+    highlights: [
+      "Move-in-ready with keys available",
+      "Completed amenities & common areas",
+      "Established community near Hosur Road",
+      "1, 2 & 3 BHK with ready documentation",
+      "Rental-ready options nearby",
+      "Easy reach to Attibele & Electronic City"
+    ],
     image: projectImages[0],
     color: "bg-sky-600"
   }
 ];
 
 export type Project = (typeof projects)[number];
+
+export function getProjectBySlug(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
 
 export const propertyHighlights = [
   {

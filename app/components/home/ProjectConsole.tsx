@@ -84,35 +84,16 @@ export function ProjectConsole({
         </div>
 
         <div className="p-4">
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2">
             {[
               ["Homes", selectedProject.homes],
-              ["Booking", selectedProject.price],
-              ["Progress", `${selectedProject.progress}%`]
+              ["Booking", selectedProject.price]
             ].map(([label, value]) => (
               <div key={label} className="rounded-lg border border-zinc-200 bg-[#fff8ed] p-3">
                 <p className="text-xs font-medium text-zinc-500">{label}</p>
                 <p className="mt-1 text-sm font-semibold text-zinc-950">{value}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-5">
-            <div className="mb-2 flex items-center justify-between text-sm">
-              <span className="font-medium text-zinc-700">Construction progress</span>
-              <span className="font-semibold text-zinc-950">
-                {selectedProject.progress}%
-              </span>
-            </div>
-            <div className="h-2 overflow-hidden rounded-md bg-zinc-200">
-              <motion.div
-                key={selectedProject.progress}
-                initial={{ width: 0 }}
-                animate={{ width: `${selectedProject.progress}%` }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                className={`h-full ${selectedProject.color}`}
-              />
-            </div>
           </div>
 
           <div className="mt-5 space-y-3">

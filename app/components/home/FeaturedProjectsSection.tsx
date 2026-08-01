@@ -28,21 +28,17 @@ export function FeaturedProjectsSection() {
           </a>
         </div>
 
-        <div className="mt-10 grid gap-4 [perspective:1200px] lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.a
               key={project.name}
-              href="/projects"
+              href={`/projects/${project.slug}`}
               initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{
-                y: -10,
-                rotateX: 3,
-                rotateY: index === 0 ? -4 : index === 2 ? 4 : 0
-              }}
+              whileHover={{ y: -8 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ type: "spring", stiffness: 320, damping: 28, delay: index * 0.05 }}
-              className="group relative isolate h-[27rem] overflow-hidden rounded-xl border border-zinc-200 bg-zinc-950 shadow-sm outline-none transition [transform-style:preserve-3d] hover:border-sky-300 hover:shadow-[0_24px_70px_rgba(2,132,199,0.16)]"
+              className="group relative isolate h-[27rem] overflow-hidden rounded-xl border border-zinc-200 bg-zinc-950 shadow-sm outline-none transition hover:border-sky-400 hover:shadow-[0_24px_70px_rgba(2,132,199,0.18)]"
             >
               <img
                 src={project.image}
@@ -53,9 +49,6 @@ export function FeaturedProjectsSection() {
               <div className="absolute inset-x-4 top-4 flex items-center justify-between gap-3">
                 <span className="rounded-md bg-[#fff8ed] px-2 py-1 text-xs font-semibold text-zinc-950 shadow-sm">
                   {project.stage}
-                </span>
-                <span className="rounded-md bg-zinc-950/85 px-2 py-1 text-xs font-semibold text-sky-200 shadow-sm">
-                  {project.progress}% built
                 </span>
               </div>
 

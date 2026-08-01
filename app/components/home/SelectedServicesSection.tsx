@@ -38,7 +38,7 @@ export function SelectedServicesSection() {
           />
           <a
             href="/services"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-600 hover:text-[#fff8ed] hover:shadow-sm"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-950 px-5 text-sm font-semibold text-sky-200 transition hover:-translate-y-0.5 hover:bg-sky-700 hover:text-[#fff8ed] hover:shadow-sm"
           >
             View services
             <ArrowRight className="h-4 w-4" />

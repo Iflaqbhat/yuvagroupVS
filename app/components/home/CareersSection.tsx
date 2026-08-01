@@ -30,7 +30,7 @@ export function CareersSection() {
               </p>
               <a
                 href="/contact"
-                className="mt-7 inline-flex h-11 items-center justify-center gap-2 rounded-md bg-[#fff8ed] px-5 text-sm font-semibold text-sky-950 transition hover:-translate-y-0.5 hover:bg-sky-50"
+                className="mt-7 inline-flex h-11 items-center justify-center gap-2 rounded-md bg-[#fff8ed] px-5 text-sm font-semibold text-sky-950 transition hover:-translate-y-0.5 hover:bg-sky-50 hover:shadow-sm"
               >
                 Explore open roles
                 <ArrowRight className="h-4 w-4" />

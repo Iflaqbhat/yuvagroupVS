@@ -1,21 +1,17 @@
-"use client";
-
-import { useState } from "react";
 import { FinalCTASection } from "../components/home/FinalCTASection";
+import { PremiumFooter } from "../components/home/PremiumFooter";
 import { ProjectSection } from "../components/home/ProjectSection";
 import { SiteHeader } from "../components/home/SiteHeader";
+import { StickyCTA } from "../components/home/StickyCTA";
 
 export default function ProjectsPage() {
-  const [activeProject, setActiveProject] = useState(0);
-
   return (
-    <main className="min-h-screen bg-[#f5efe4] text-zinc-950">
+    <main className="min-h-screen bg-[#f5efe4] pb-20 text-zinc-950 md:pb-0">
       <SiteHeader />
-      <ProjectSection
-        activeProject={activeProject}
-        setActiveProject={setActiveProject}
-      />
+      <ProjectSection />
       <FinalCTASection />
+      <PremiumFooter />
+      <StickyCTA />
     </main>
   );
 }
